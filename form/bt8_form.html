@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+<div style="display: flex; justify-content: center;">
+    <form action="bt8_config.php" method="post">
+        <fieldset >
+            <legend><h4>Enter Your Information</h4></legend>
+            <label for="fullname">Fullname:</label>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone"required><br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Nam" checked>
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="gender" value="Nữ">
+            <label for="female">Nữ</label><br><br>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="Việt Nam" selected>Việt Nam</option>
+            </select><br><br>
+
+            <label>Study:<br></label>
+            <input type="checkbox" id="php" name="study[]" value="PHP & MySQL">
+            <label for="php">PHP & MySQL</label>
+            <input type="checkbox" id="aspnet" name="study[]" value="ASP.NET">
+            <label for="aspnet">ASP.NET</label>
+            <input type="checkbox" id="CCNA" name="study[]" value="CCNA">
+            <label for="CCNA">CCNA</label>
+            <input type="checkbox" id="security" name="study[]" value="Security+">
+            <label for="security">Security+</label><br><br>
+
+            <label for="note">Note:</label><br>
+            <textarea id="note" name="note" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Gửi">
+            <input type="reset" value="Hủy">
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
