@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/usermanaging",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\UserManaging\\": "app/",
+            "Modules\\UserManaging\\Database\\Factories\\": "database/factories/",
+            "Modules\\UserManaging\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\UserManaging\\Tests\\": "tests/"
+        }
+    }
+}
